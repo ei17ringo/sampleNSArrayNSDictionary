@@ -10,6 +10,14 @@
 
 @interface ViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UILabel *fruitsLabel;
+
+@property (weak, nonatomic) IBOutlet UIButton *fruitsButton0;
+
+- (IBAction)fruitsButton0Clicked:(id)sender;
+@property (weak, nonatomic) IBOutlet UIButton *fruitsButton1;
+- (IBAction)fruitsButton1Clicked:(id)sender;
+@property (weak, nonatomic) IBOutlet UIButton *fruitsButton2;
 
 @end
 

@@ -16,7 +16,18 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    //配列
+    NSArray *fruitsArray = @[@"バナナ",@"りんご",@"みかん",@"メロン",@"すいか"];
+
+    NSLog(@"%@",fruitsArray[4]);
+    
+    NSLog(@"%@",fruitsArray[2]);
+    
+    
+//    NSArray *fruitsArray2 = [NSArray arrayWithObjects:@"バナナ",@"りんご",@"みかん",@"メロン",@"すいか", nil];
+
+
 }
 
 - (void)didReceiveMemoryWarning {
@@ -24,4 +35,14 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)fruitsButton0Clicked:(id)sender {
+    //配列
+    NSArray *fruitsArray = @[@"バナナ",@"りんご",@"みかん",@"メロン",@"すいか"];
+    self.fruitsLabel.text = fruitsArray[0];
+}
+- (IBAction)fruitsButton1Clicked:(id)sender {
+    //配列
+    NSArray *fruitsArray = @[@"バナナ",@"りんご",@"みかん",@"メロン",@"すいか"];
+    self.fruitsLabel.text = fruitsArray[1];
+}
 @end
